@@ -15,8 +15,9 @@ public class TodoController {
     @Autowired
     ToDoService toDoService;
     @PostMapping("/add")
-    public void addStudent(@RequestBody ToDoDto studentDto){
+    public boolean addStudent(@RequestBody ToDoDto studentDto){
         toDoService.addToDO(studentDto);
+        return true;
     }
     @GetMapping("/get")
     public List<ToDo> getToDO(){

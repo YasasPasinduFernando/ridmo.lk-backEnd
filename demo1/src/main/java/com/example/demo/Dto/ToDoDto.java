@@ -11,6 +11,7 @@ import lombok.ToString;
 @ToString
 public class ToDoDto {
     private String priority;
+    private String task;
     private String status;
 
 }

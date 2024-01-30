@@ -18,6 +18,7 @@ public class ToDo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long taskId;
+    private String task;
     private String priority;
     private String status;
 
